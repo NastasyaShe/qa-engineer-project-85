@@ -117,3 +117,6 @@
     Успешное создание Task
   status: fail
 
+- summary: |
+    Успешное изменение звука в настройках на standrat
+  status: fail
