@@ -98,7 +98,7 @@
   status: pass
 
 - summary: |
-    Проверка открытия раздела создания Task 
+    Проверка открытия информации о созданном Task 
   status: fail
 
 - summary: |
