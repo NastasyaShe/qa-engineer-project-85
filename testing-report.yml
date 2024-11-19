@@ -112,3 +112,8 @@
 - summary: |
     Проверка просмотра действий через вкладку history на домашней страницу
   status: pass
+
+- summary: |
+    Успешное создание Task
+  status: fail
+
