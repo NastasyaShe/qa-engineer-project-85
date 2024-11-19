@@ -450,3 +450,20 @@
     - Кликаем на create new task
   expected-result: |
     Откроется страница с созданием new task
+
+- summary: |
+  Успешное изменение звука в настройках на standrat 
+  requirement: |
+  В настройках профиля можно поменять звуковое оформление на standart
+  prerequisites:
+   Открыта страница https://codebattle.hexlet.io/ ,  выполнен вход в учетную запись игрока Github
+  test-data: |
+    no-data
+  steps:
+    - Кликаем на Изображение пользователя в правом верхнем углу
+    - В выпадающем меню выбираем settings
+    - Select sound type  выбираем standart
+    - Нажимаем на save 
+    - Обновляем страницу
+  expected-result: |
+    Звуковое оформление останется на выбранном standart
