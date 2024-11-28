@@ -512,3 +512,32 @@
     - Обновляем страницу
   expected-result: |
     Звуковое оформление останется на выбранном standart
+
+- summary: |
+    Создание игры 3 уровня с другим игроком (рандомно)
+  requirement: |
+    Создание игры level 3  с другим игроком на 10 минут
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/ ,  выполнен вход в учетную запись игрока Github
+  test-data: |
+    level -3,  game type - with other user, time control -10 min, choose task by name or tags - любой
+  steps:
+    - Кликаем на create new game 
+    - Указываем параметры игры согласно test-data
+    - Кликаем на create a battle  
+  expected-result: |
+    Создается игра с ожиданием оппонента и отображается в таблице в лобби 
+    
+- summary: |
+    Можно удалить созданную игру для битвы с другим пользователем
+  requirement: |
+    Созданную игру with ohter users можно удалить, если никто не принимает участие в ней
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/#lobby,  выполнен вход в учетную запись игрока Github, Создана игра с настройками: level -3,  game type - with other user, time control -10 min, choose task by name or tags - любой
+  test-data: |
+     no data
+  steps:
+    - Находим в таблице lobby свою созданную игру
+    - Нажимаем на крестик для удаления игры
+  expected-result: |
+    Игра пропадает из таблицы lobby и успешно удалена  
