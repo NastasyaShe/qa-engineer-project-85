@@ -534,10 +534,10 @@
     Созданную игру with ohter users можно удалить, если никто не принимает участие в ней
   prerequisites:
     Открыта страница https://codebattle.hexlet.io/#lobby, выполнен вход в учетную запись игрока Github
-    Создана игра с настройками: level -3,  game type - with other user, time control -10 min, choose task by name or tags - любой
   test-data: |
-     no data
+    игра с настройками: level -3,  game type - with other user, time control -10 min, choose task by name or tags - любой
   steps:
+    - Cоздаем игру с настройками как в test-data
     - Находим в таблице lobby свою созданную игру
     - Нажимаем на крестик для удаления игры
   expected-result: |
